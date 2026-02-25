@@ -17,7 +17,7 @@ const Navbar = () => {
         <nav className="flex justify-between px-2 ">
           <div className="font-semibold text-[1.4rem]">SK</div>
 
-          <motion.ul className="flex nav-hidden-css items-center font-medium gap-8 text-[#f8f1f1] cursor-pointer pr-5">
+          <motion.ul className="flex nav-hidden-css items-center font-medium gap-8 text-[#c2b9b9] cursor-pointer pr-5">
             <motion.li
               initial={{ opacity: 0, y: -14 }}
               animate={{ opacity: 1, y: 0 }}

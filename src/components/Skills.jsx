@@ -41,12 +41,13 @@ const Skills = () => {
         </h2>
 
         <motion.p
-          initial={{ opacity: 0, x: -700 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7 }}
-          className="tracking-tight "
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9 }}
+          className="tracking-tight text-gray-400 z-0"
         >
-          Lorem ipsum dolor sit amet.
+          I am Full Stack Developer and building web applications and mobile application. <br />
+          Skilled in frontend framework like Reactjs and backend Nodejs 
         </motion.p>
       </div>
 

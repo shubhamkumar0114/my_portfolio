@@ -69,7 +69,7 @@ const Home = () => {
         >
           <img
             className="opacity-80 w-full h-full"
-            src="./public/aarav.png"
+            src="/aarav.png"
             alt="image"
           />
         </motion.div>

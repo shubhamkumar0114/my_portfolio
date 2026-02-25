@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
@@ -7,6 +7,13 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Contacts = () => {
+
+  const [name , setName] = useState("");
+  const [email , setEmail] = useState("");
+  const [message , setMessage] = useState("");
+
+  const user = {name , email, message}
+
   const onSubmitHandler = (e) => {
     e.preventDefault();
     alert("Sent Message...");
@@ -18,17 +25,17 @@ const Contacts = () => {
       </h2>
       <div className=" md:w-3xl md:p-2 p-0 m-auto flex md:flex-row flex-col gap-12">
         <form className="md:w-80 flex flex-col gap-4" onSubmit={onSubmitHandler}>
-          <input
+          <input required value={name} onChange={(e)=> setName(e.target.value)}
             className="bg-zinc-700 h-10 rounded-md pl-4 outline-0"
             type="text"
             placeholder="name"
           />
-          <input
+          <input required value={email} onChange={(e)=> setEmail(e.target.value)}
             className="bg-zinc-700 h-10 rounded-md pl-4 outline-0"
             type="email"
             placeholder="email"
           />
-          <textarea
+          <textarea required  value={message} onChange={(e)=> setMessage(e.target.value)}
             className="bg-zinc-700 resize-none h-40 rounded-md  pl-4 outline-0"
             name="message"
             placeholder="message.."

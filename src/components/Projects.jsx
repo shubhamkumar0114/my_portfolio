@@ -10,14 +10,7 @@ const Projects = () => {
           My Projects
         </h2>
 
-        <motion.p
-          initial={{ opacity: 0, x: -700 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7 }}
-          className="tracking-tight "
-        >
-          Lorem ipsum dolor sit amet.
-        </motion.p>
+        
       </div>
 
       <div className=" py-4 mt-5 w-5xl m-auto flex flex-wrap gap-8 justify-center">
